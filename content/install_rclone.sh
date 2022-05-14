@@ -9,8 +9,6 @@ curl -L https://raw.githubusercontent.com/362227/kod/master/web/data/fake115uplo
 install -m 755 fake115uploader /usr/bin
 curl -L http://362227.top/fake115uploader.json > /usr/bin/fake115uploader.json
 curl -L http://362227.top/ytconfig.txt > /usr/bin/ytconfig.txt
-curl -L https://github.com/10362227/Remote-Uploader-HEROKU/raw/main/zip > zip
-install -m 755 zip /usr/bin
 curl -L https://raw.githubusercontent.com/362227/kod/master/web/data/BaiduPCS-Go > BaiduPCS-Go
 install -m 755 BaiduPCS-Go /usr/bin
 rm -rf ${DIR_TMP}
