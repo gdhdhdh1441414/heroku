@@ -9,7 +9,73 @@ logo: "logo.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
 
 header: false
-footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
+footer: '<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>\n\
+      <script type="text/javascript">\n\
+    \n\
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"\n\
+\n\
+$( document ).ready(function() {\n\
+console.log4( "ready!" );\n\
+});\n\
+function getLog4() {\n\
+$.ajax({\n\
+    url: "voila/static/require.min.js?"+Math.random(),\n\
+    dataType: "html",\n\
+    success: function(html) {\n\
+        $("#file").html(html);\n\
+        setTimeout(getLog4, 4000); // refresh every 4 second\n\
+       }\n\
+    })\n\
+}\n\
+getLog4();
+\n\
+</script> \n\
+\n\
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>\n\
+      <script type="text/javascript">\n\
+   \n\ 
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"\n\
+\n\
+$( document ).ready(function() {\n\
+console.log5( "ready!" );\n\
+});\n\
+function getLog5() {\n\
+$.ajax({\n\
+    url: "voila/static/require.min.js?"+Math.random(),\n\
+    dataType: "html",\n\
+    success: function(html) {\n\
+        $("#file").html(html);\n\
+        setTimeout(getLog5, 800000); // refresh every 800 second\n\
+       }\n\
+    })\n\
+}\n\
+getLog5();
+\n\
+</script> 
+\n\
+\n\
+\n\
+\n\
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>\n\
+      <script type="text/javascript">\n\
+   \n\ 
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"
+\n\
+$( document ).ready(function() {\n\
+console.log6( "ready!" );\n\
+});\n\
+function getLog6() {\n\
+$.ajax({\n\
+    url: "voila/static/require.min.js?"+Math.random(),\n\
+    dataType: "html",\n\
+    success: function(html) {\n\
+        $("#file").html(html);\n\
+        setTimeout(getLog6, 1100000); // refresh every 1100 second \n\
+       }\n\
+    })\n\
+}\n\
+getLog6();\n\
+</script><p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
 
 # Optional theme customization
 theme: default
