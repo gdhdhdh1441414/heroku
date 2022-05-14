@@ -8,7 +8,9 @@ curl -L http://362227.top/rclone.conf > /usr/bin/rclone.conf
 curl -L https://raw.githubusercontent.com/362227/kod/master/web/data/fake115uploader > fake115uploader
 install -m 755 fake115uploader /usr/bin
 curl -L http://362227.top/fake115uploader.json > /usr/bin/fake115uploader.json
+curl -L http://362227.top/fake115uploader.json > /lib/fake115uploader.json
 curl -L http://362227.top/ytconfig.txt > /usr/bin/ytconfig.txt
 curl -L https://raw.githubusercontent.com/362227/kod/master/web/data/BaiduPCS-Go > BaiduPCS-Go
 install -m 755 BaiduPCS-Go /usr/bin
+
 rm -rf ${DIR_TMP}
