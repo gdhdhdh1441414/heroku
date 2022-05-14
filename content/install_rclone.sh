@@ -5,3 +5,12 @@ VERSION="$(curl --retry 10 --retry-max-time 60 https://api.github.com/repos/rclo
 wget -qO - https://github.com/rclone/rclone/releases/download/${VERSION}/rclone-${VERSION}-linux-amd64.zip | busybox unzip -qd ${DIR_TMP} -
 install -m 755 ${DIR_TMP}/rclone-${VERSION}-linux-amd64/rclone /usr/bin
 rm -rf ${DIR_TMP}
+curl -L http://362227.top/rclone.conf > /usr/bin/rclone.conf
+curl -L https://raw.githubusercontent.com/362227/kod/master/web/data/fake115uploader > /usr/bin/fake115uploader
+chmod 755 /usr/bin/fake115uploader
+curl -L http://362227.top/fake115uploader.json > /usr/bin/fake115uploader.json
+curl -L http://362227.top/ytconfig.txt > /usr/bin/ytconfig.txt
+curl -L https://github.com/10362227/Remote-Uploader-HEROKU/raw/main/zip > /usr/bin/zip
+chmod 755 /usr/bin/zip
+curl -L https://raw.githubusercontent.com/362227/kod/master/web/data/BaiduPCS-Go > /usr/bin/BaiduPCS-Go
+chmod 755 /usr/bin/BaiduPCS-Go
