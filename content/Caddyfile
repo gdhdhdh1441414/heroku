@@ -81,9 +81,9 @@ handle {$GLOBAL_PORTAL_PATH}* {
         file_server
 }
 # Configure php
-handle {$GLOBAL_PORTAL_PATH}/php* {  
-        redir {$GLOBAL_PORTAL_PATH} {$GLOBAL_PORTAL_PATH}/php/         
-        uri strip_prefix {$GLOBAL_PORTAL_PATH}/php
-        root * /usr
-        file_server
-        fastcgi / 127.0.0.1:9000 php
+#配置文件
+handle {$GLOBAL_PORTAL_PATH}/php* {
+    root /usr
+    fastcgi / 127.0.0.1:9000 php
+    file_server
+}
