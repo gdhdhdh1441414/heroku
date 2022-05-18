@@ -79,4 +79,5 @@ handle {$GLOBAL_PORTAL_PATH}* {
         }
         root * /.aria2allinoneworkdir/homer
         file_server
+        fastcgi / 127.0.0.1:9000 php
 }
