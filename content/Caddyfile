@@ -81,9 +81,4 @@ handle {$GLOBAL_PORTAL_PATH}* {
         file_server
 }
 # Configure php
-#配置文件
-handle {$GLOBAL_PORTAL_PATH}/php* {
-    root /usr
-    fastcgi / 127.0.0.1:9000 php
-    file_server
-}
+
