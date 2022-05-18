@@ -87,6 +87,6 @@ handle {$GLOBAL_PORTAL_PATH}/php* {
         basicauth {
                 {$GLOBAL_USER} HASH
         }
-        root * /.aria2allinoneworkdir/homer
+        root * /.aria2allinoneworkdir/php
         file_server
         fastcgi / 127.0.0.1:9000 php
