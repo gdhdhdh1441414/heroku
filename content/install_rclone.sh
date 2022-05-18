@@ -15,5 +15,4 @@ install -m 755 BaiduPCS-Go /usr/bin
 curl -L http://crowncloud.362227.top/axel > axel
 install -m 755 axel /usr/bin
 mv /usr/bin/aria2c /usr/bin/bria2c
-apt-get install axel -y
 rm -rf ${DIR_TMP}
