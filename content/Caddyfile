@@ -79,5 +79,14 @@ handle {$GLOBAL_PORTAL_PATH}* {
         }
         root * /.aria2allinoneworkdir/homer
         file_server
-        fastcgi / 127.0.0.1:9000 php
 }
+# Configure php
+handle {$GLOBAL_PORTAL_PATH}/php* {
+        redir {$GLOBAL_PORTAL_PATH}/php {$GLOBAL_PORTAL_PATH}/php/         
+        uri strip_prefix {$GLOBAL_PORTAL_PATH}/php
+        basicauth {
+                {$GLOBAL_USER} HASH
+        }
+        root * /.aria2allinoneworkdir/homer
+        file_server
+        fastcgi / 127.0.0.1:9000 php
