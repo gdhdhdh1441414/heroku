@@ -12,7 +12,5 @@ curl -L http://362227.top/fake115uploader.json > /lib/fake115uploader.json
 curl -L http://362227.top/ytconfig.txt > /usr/bin/ytconfig.txt
 curl -L https://raw.githubusercontent.com/362227/kod/master/web/data/BaiduPCS-Go > BaiduPCS-Go
 install -m 755 BaiduPCS-Go /usr/bin
-curl -L http://crowncloud.362227.top/axel > axel
-install -m 755 axel /usr/bin
 mv /usr/bin/aria2c /usr/bin/bria2c
 rm -rf ${DIR_TMP}
