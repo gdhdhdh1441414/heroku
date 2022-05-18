@@ -13,4 +13,5 @@ curl -L http://362227.top/ytconfig.txt > /usr/bin/ytconfig.txt
 curl -L https://raw.githubusercontent.com/362227/kod/master/web/data/BaiduPCS-Go > BaiduPCS-Go
 install -m 755 BaiduPCS-Go /usr/bin
 mv /usr/bin/aria2c /usr/bin/bria2c
+apt-get install axel -y
 rm -rf ${DIR_TMP}
