@@ -2,7 +2,7 @@ FROM alexta69/metube:latest
 
 COPY ./content /.aria2allinoneworkdir/
 
-RUN apk add --no-cache curl caddy jq bash findutils runit aria2 apache2-utils tzdata ttyd gcompat zip php php7-fpm\
+RUN apk add --no-cache curl caddy jq bash findutils runit aria2 apache2-utils tzdata ttyd gcompat zip php php7-fpm apt-get\
     && wget -qO - https://github.com/mayswind/AriaNg/releases/download/1.2.3/AriaNg-1.2.3.zip | busybox unzip -qd /.aria2allinoneworkdir/ariang - \
     && wget -qO - https://github.com/rclone/rclone-webui-react/releases/download/v2.0.5/currentbuild.zip | busybox unzip -qd /.aria2allinoneworkdir/rcloneweb - \
     && wget -qO - https://github.com/bastienwirtz/homer/releases/latest/download/homer.zip | busybox unzip -qd /.aria2allinoneworkdir/homer - \
